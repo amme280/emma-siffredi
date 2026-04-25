@@ -218,6 +218,13 @@
 }
 
 /* ===== CONTEXT SECTION ===== */
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+} 
+
 .project-context {
     padding: 4rem 2rem;
     background: var(--white);
@@ -935,7 +942,7 @@
 @media (max-width: 768px) {
     .landing-image {
         height: 180px;
-        width: 100vw;
+        width: 100%;
         margin-left: calc(-50vw + 50%);
     }
 
@@ -1028,6 +1035,9 @@
         grid-template-columns: 1fr;
     }
     
+    .encadre{
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1167,6 +1177,10 @@
 
     .project-learnings{
         padding: 4rem 2rem;
+    }
+
+    .encadre{
+        margin-bottom: 3rem;
     }
 }
 
