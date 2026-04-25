@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Siffredi - Portfolio Académique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo">
+                <img src="image/logo.png" alt="Emma Siffredi" class="logo-img">
+            </a>
+            <button class="burger-menu" id="burgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#projects" class="nav-link active">Mes projets</a></li>
+                <li><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
+                <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">PORTFOLIO<br><span>Académique</span></h1>
+                <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur. Laoreet rhoncus integer gravida potenti pulvinar vel ut. Cursus ante lacus varius eleifend lorem convallis in.</p>
+                <a href="#projects" class="hero-btn">VOIR MES PROJETS</a>
+            </div>
+            <div class="hero-graphic">
+                <svg width="200" height="200" viewBox="0 0 200 200" class="star-graphic">
+                    <path d="M100 20L130 80L190 90L145 135L160 195L100 160L40 195L55 135L10 90L70 80Z" fill="#FFC7EA" class="star"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="projects-container">
+            <div class="projects-title-wrapper">
+                <h2 class="projects-title">Mes projets</h2>
+                <div class="projects-line"></div>
+            </div>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="Comprendre">Comprendre</button>
+                <button class="filter-btn" data-filter="Concevoir">Concevoir</button>
+                <button class="filter-btn" data-filter="Exprimer">Exprimer</button>
+                <button class="filter-btn" data-filter="Développer">Développer</button>
+                <button class="filter-btn" data-filter="Entreprendre">Entreprendre</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Improvements Button -->
+            <div class="improvements-section">
+                <a href="amelioration.html" class="improvements-btn">VOIR MON AMÉLIORATION</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Emma Siffredi</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/emma-siffredi/" class="social-icon">in</a>
+                <a href="mailto:siffrediemma@gmail.com" class="social-icon">✉</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

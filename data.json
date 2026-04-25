@@ -1,0 +1,164 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Yayoi Kusama : au cœur des obsessions",
+      "description": "Un site internet interactif retraçant la vie de l'artiste japonaise Yayoi Kusama, à travers une médiation culturelle immersive.",      
+      "image": "image/kusama/cover_site.png",      
+      "link": "kusama.html",
+      "domain": "Création Numérique",
+      "domainType": "creation",
+      "competences": ["Entreprendre", "Exprimer"],
+      "year": "BUT MMI 3",
+      "yearNumber": 3,
+      "tags": ["#Entreprendre", "#Exprimer", "#Médiation", "#Immersion"]
+    },
+    {
+      "id": "2",
+      "title": "Danse à l'Opéra",
+      "description": "Lorem ipsum dolor sit amet consectetur. Laoreet rhoncus integer gravida potenti pulvinar vel ut. Cursus ante lacus varius eleifend lorem convallis in. Risus turpis curabitur et.",
+      "image": "image/statue of liberty.jpg",
+      "link": "#",
+      "domain": "Création Numérique",
+      "domainType": "creation",
+      "competences": ["Exprimer", "Entreprendre"],
+      "year": "BUT MMI 3",
+      "yearNumber": 3,
+      "tags": ["#Exprimer", "#Entreprendre", "#Décor Numérique"]
+    },
+    {
+      "id": "3",
+      "title": "Alternance Print",
+      "description": "Lorem ipsum dolor sit amet consectetur. Laoreet rhoncus integer gravida potenti pulvinar vel ut. Cursus ante lacus varius eleifend lorem convallis in. Risus turpis curabitur et.",
+      "image": "image/statue of liberty.jpg",
+      "link": "#",
+      "domain": "Création Numérique",
+      "domainType": "creation",
+      "competences": ["Exprimer"],
+      "year": "BUT MMI 3",
+      "yearNumber": 3,
+      "tags": ["#Exprimer", "#Print", "#Communication visuelle"]
+    },
+    {
+      "id": "4",
+      "title": "Musée d'Histoire de Marseille",
+      "description": "Réalisation d'un magazine de présentation du Musée d'Histoire de Marseille, durant mon stage de deuxième année du BUT MMI.",
+      "image": "image/statue of liberty.jpg",
+      "link": "stageMHM.html",
+      "domain": "Création Numérique",
+      "domainType": "creation",
+      "competences": ["Comprendre", "Entreprendre"],
+      "year": "BUT MMI 2",
+      "yearNumber": 2,
+      "tags": ["#Comprendre", "#Entreprendre", "#Magazine", "#Print"]
+    },
+    {
+      "id": "5",
+      "title": "Portfolio personnel",
+      "description": "Mon site internet personnel, mettant en avant mes projets et compétences.",
+      "image": "image/portfolio/cover_portfolio.png",
+      "link": "portfolio-perso.html",
+      "domain": "Développement Web",
+      "domainType": "dev",
+      "competences": ["Entreprendre", "Développer"],
+      "year": "BUT MMI 2",
+      "yearNumber": 2,
+      "tags": ["#Entreprendre", "#Développer", "#Professionnalisation", "#Web"]
+    },
+    {
+      "id": "6",
+      "title": "Santé VS Budget",
+      "description": "Production d'une vidéo en motion design, présentant les données liées à une datavisualisation.",
+      "image": "image/SVSB/cover_carte.png",
+      "link": "SVSB.html",
+      "domain": "Communication",
+      "domainType": "communication",
+      "competences": ["Comprendre", "Exprimer"],
+      "year": "BUT MMI 2",
+      "yearNumber": 2,
+      "tags": ["#Comprendre", "#Exprimer", "#Motion Design", "#Datavisualisation"]
+    },
+    {
+      "id": "7",
+      "title": "Shinee",
+      "description": "Shinee : la météo qui donne le smile. Application mobile de météo, incluant une datavisualisation temporelle. ",
+      "image": "image/shinee/cover-carte.png",
+      "link": "shinee.html",
+      "domain": "Création Numérique",
+      "domainType": "creation",
+      "competences": ["Exprimer", "Développer", "Concevoir"],
+      "year": "BUT MMI 2",
+      "yearNumber": 2,
+      "tags": ["#Exprimer", "#Développer", "#Concevoir", "#Application", "#Webdesign"]
+    },
+    {
+      "id": "8",
+      "title": "Banka",
+      "description": "Création d'une identité visuelle pour une banque fictive, adaptée aux étudiants et à leur mode de vie.",
+      "image": "image/banka/cover_banka.png",
+      "link": "banka.html",
+      "domain": "Création Numérique",
+      "domainType": "creation",
+      "competences": ["Exprimer"],
+      "year": "BUT MMI 1",
+      "yearNumber": 1,
+      "tags": ["#Exprimer", "#Identité visuelle", "#Charte graphique"]
+    },
+
+    {
+      "id": "9",
+      "title": "Mes softs skills",
+      "description": "Présentation de mes compétences professionnelles en vidéo.",
+      "link": "soft_skills.html",
+      "image": "image/statue of liberty.jpg",
+      "domain": "Création Numérique",
+      "domainType": "creation",
+      "competences": ["Exprimer"],
+      "year": "BUT MMI 1",
+      "yearNumber": 1,
+      "tags": ["#Exprimer", "#Vidéo", "#Montage"]
+    },
+
+    {
+      "id": "10",
+      "title": "Green Up",
+      "description": "Conception d'un service répondant à une problématique liée au tourisme.",
+      "link": "green-up.html",
+      "image": "image/statue of liberty.jpg",
+      "domain": "Communication",
+      "domainType": "communication",
+      "competences": ["Concevoir"],
+      "year": "BUT MMI 1",
+      "yearNumber": 1,
+      "tags": ["#Concevoir", "#Brevet", "#Documentation légale"]
+    },
+
+    {
+      "id": "11",
+      "title": "Brigitte",
+      "description": "Conception d'un site web sous Wordpress.",
+      "link": "wordpress.html",
+      "image": "image/statue of liberty.jpg",
+      "domain": "Développement Web",
+      "domainType": "dev",
+      "competences": ["Développer"],
+      "year": "BUT MMI 1",
+      "yearNumber": 1,
+      "tags": ["#Développer", "#Wordpress", "#Webdesign"]
+    },
+
+        {
+      "id": "12",
+      "title": "MMI Découverte",
+      "description": "Conception d'un site web pour une agence de voyage fictive.",
+      "link": "mmi_decouverte.html",
+      "image": "image/mmi-decouverte/accueil.png",
+      "domain": "Développement Web",
+      "domainType": "dev",
+      "competences": ["Développer", "Exprimer"],
+      "year": "BUT MMI 1",
+      "yearNumber": 1,
+      "tags": ["#Développer", "#Exprimer", "#Webdesign", "#HTML", "#CSS"]
+    }
+  ]
+}
