@@ -213,11 +213,14 @@ style.textContent = `
 document.head.appendChild(style);
 
 // ===== SMOOTH SCROLL ENHANCEMENT =====
-document.querySelector('.hero-btn').addEventListener('click', (e) => {
-    e.preventDefault();
-    const projectsSection = document.getElementById('projects');
-    projectsSection.scrollIntoView({ behavior: 'smooth' });
-});
+const heroBtn = document.querySelector('.hero-btn');
+if (heroBtn) {
+    heroBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const projectsSection = document.getElementById('projects');
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+}
 
 // ===== SCROLL EFFECTS =====
 window.addEventListener('scroll', () => {

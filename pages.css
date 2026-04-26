@@ -69,7 +69,6 @@
 
 .difficulty{
     flex: auto;
-    align-items: center;
     display: flex;
     gap: 0.5rem;
     margin-bottom: 24px;
@@ -756,6 +755,46 @@ html, body {
 
 .ac-link:hover .ac-tooltip {
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .ac-tooltip {
+        max-width: 200px;
+        bottom: auto;
+        top: 130%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ac-tooltip::after {
+        top: auto;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top-color: transparent;
+        border-bottom-color: var(--blue-light);
+    }
+}
+
+@media (max-width: 480px) {
+    .ac-tooltip {
+        max-width: 140px;
+        font-size: 0.75rem;
+        padding: 8px 12px;
+        bottom: auto;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ac-tooltip::after {
+        top: auto;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top-color: transparent;
+        border-bottom-color: var(--blue-light);
+    }
 }
 
 .production-text {

@@ -16,15 +16,15 @@
     {
       "id": "2",
       "title": "Danse à l'Opéra",
-      "description": "Lorem ipsum dolor sit amet consectetur. Laoreet rhoncus integer gravida potenti pulvinar vel ut. Cursus ante lacus varius eleifend lorem convallis in. Risus turpis curabitur et.",
-      "image": "image/statue of liberty.jpg",
-      "link": "#",
+      "description": "En collaboration avec le lycée Durmont d'Urville, nous avons réalisé un décor numérique dans le but d'accompagner une performance de danse.",
+      "image": "image/DALO/cover_carte.png",
+      "link": "Danse-opera.html",
       "domain": "Création Numérique",
       "domainType": "creation",
       "competences": ["Exprimer", "Entreprendre"],
       "year": "BUT MMI 3",
       "yearNumber": 3,
-      "tags": ["#Exprimer", "#Entreprendre", "#Décor Numérique"]
+      "tags": ["#Exprimer", "#Entreprendre", "#Décor Numérique", "#Projection", "#Vidéo"]
     },
     {
       "id": "3",
