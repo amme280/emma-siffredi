@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -32,23 +33,197 @@
     </nav>
 
     <!-- Improvements Section -->
-    <section class="improvements-section-full" style="margin-top: 60px; min-height: calc(100vh - 60px);">
+    <section class="improvements-section-full" style="margin-top: 60px; padding: 3rem 2rem;">
         <div class="improvements-container">
-            <h1 style="font-size: 3rem; margin-bottom: 2rem;">Mon Amélioration</h1>
-            <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--black); margin-bottom: 1.5rem;">
-                    Cette page présente mes améliorations et ma progression dans le programme BUT MMI.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--black); margin-bottom: 1.5rem;">
-                    À travers mes projets académiques, j'ai développé de nombreuses compétences en :
-                </p>
-                <ul style="margin-left: 2rem; color: var(--black);">
-                    <li style="margin-bottom: 0.5rem;">Conception graphique et UX/UI</li>
-                    <li style="margin-bottom: 0.5rem;">Développement web et applications</li>
-                    <li style="margin-bottom: 0.5rem;">Communication et médiation digitale</li>
-                    <li style="margin-bottom: 0.5rem;">Gestion de projets</li>
-                    <li style="margin-bottom: 0.5rem;">Travail en équipe et collaboration</li>
-                </ul>
+            <div class="projects-title-wrapper">
+                <h2 class="projects-title">Mes améliorations</h2>
+                <div class="projects-line"></div>
+            </div>
+            
+            <!-- Competence Filters -->
+            <div class="competence-filters">
+                <button class="competence-filter-btn comprendre active" data-competence="comprendre">Comprendre</button>
+                <button class="competence-filter-btn concevoir" data-competence="concevoir">Concevoir</button>
+                <button class="competence-filter-btn exprimer" data-competence="exprimer">Exprimer</button>
+                <button class="competence-filter-btn developper" data-competence="developper">Développer</button>
+                <button class="competence-filter-btn entreprendre" data-competence="entreprendre">Entreprendre</button>
+            </div>
+
+            <!-- Competence Content -->
+            <div class="competence-content-area">
+                <!-- Comprendre -->
+                <div class="competence-content comprendre-content active" data-competence="comprendre">
+                    <div class="competence-layout">
+                        <div class="competence-text">
+                            <p>Au cours de ces trois années, j'ai appris à passer d'une simple observation à un audit stratégique.</p>
+                            <p>En BUT1, ma compréhension se limitait à identifier des cibles et des valeurs simples (Projet Banka). </p>
+                            <p>En BUT2, j'ai approfondi cette analyse en traitant des données complexes pour la datavisualisation (Santé VS Budget), apprenant à vulgariser des enjeux de société. </p>
+                            <p>En BUT3, ma compétence s'est consolidée par une compréhension globale des enjeux de médiation culturelle (Kusama), où j'ai su anticiper les besoins émotionnels et interactifs d'un utilisateur au sein d'une expérience complète.</p>
+                        </div>
+                        <div class="competence-sliders">
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 1</span>
+                                    <span class="slider-percentage">12%</span>
+                                </div>
+                                <div class="slider-bar comprendre-slider" style="--percentage: 12%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 2</span>
+                                    <span class="slider-percentage">46%</span>
+                                </div>
+                                <div class="slider-bar comprendre-slider" style="--percentage: 46%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 3</span>
+                                    <span class="slider-percentage">77%</span>
+                                </div>
+                                <div class="slider-bar comprendre-slider" style="--percentage: 77%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concevoir -->
+                <div class="competence-content concevoir-content" data-competence="concevoir">
+                    <div class="competence-layout">
+                        <div class="competence-text">
+                            <p>Ma capacité de conception a évolué d'une approche fonctionnelle vers une vision centrée sur l'expérience utilisateur.</p>
+                            <p>J'ai débuté en BUT1 par la rédaction de cahiers des charges et de brevets d'invention (Green Up).</p>
+                            <p>En BUT2, j'ai franchi une étape en concevant des interfaces interactives complexes et ergonomiques (Shinee). </p>
+                            <p>Aujourd'hui, en BUT3, je suis capable de concevoir des dispositifs immersifs et sophistiqués complets (Kusama), en justifiant chaque choix créatif par une intention stratégique forte.</p>
+                        </div>
+                        <div class="competence-sliders">
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 1</span>
+                                    <span class="slider-percentage">20%</span>
+                                </div>
+                                <div class="slider-bar concevoir-slider" style="--percentage: 20%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 2</span>
+                                    <span class="slider-percentage">55%</span>
+                                </div>
+                                <div class="slider-bar concevoir-slider" style="--percentage: 55%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 3</span>
+                                    <span class="slider-percentage">85%</span>
+                                </div>
+                                <div class="slider-bar concevoir-slider" style="--percentage: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exprimer -->
+                <div class="competence-content exprimer-content" data-competence="exprimer">
+                    <div class="competence-layout">
+                        <div class="competence-text">
+                            <p>C'est la compétence où ma progression technique est la plus visible.</p>
+                            <p>De la création d'identités visuelles statiques en BUT1 (Banka), je suis passée à la maîtrise de l'image animée et du motion design en BUT2 (Santé VS Budget, Shinee).</p>
+                            <p>Le BUT3 marque l'aboutissement de cette évolution avec l'intégration de tous les concepts des années précédentes dans un même projet (Kusama).</p>
+                            <p>Je crée désormais des univers visuels cohérents et immersifs, capables de porter un message sur n'importe quel support.</p>
+                        </div>
+                        <div class="competence-sliders">
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 1</span>
+                                    <span class="slider-percentage">25%</span>
+                                </div>
+                                <div class="slider-bar exprimer-slider" style="--percentage: 25%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 2</span>
+                                    <span class="slider-percentage">60%</span>
+                                </div>
+                                <div class="slider-bar exprimer-slider" style="--percentage: 60%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 3</span>
+                                    <span class="slider-percentage">82%</span>
+                                </div>
+                                <div class="slider-bar exprimer-slider" style="--percentage: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Développer -->
+                <div class="competence-content developper-content" data-competence="developper">
+                    <div class="competence-layout">
+                        <div class="competence-text">
+                            <p>Mon parcours en développement est marqué par une autonomie croissante face à la complexité technique.</p>
+                            <p>Après avoir appris les bases du HTML/CSS en BUT1 (MMI Découverte), j'ai exploré les solutions de gestion de contenu et des interfaces CMS en BUT2 (Framer, WordPress). </p>
+                            <p>En BUT3, j'ai relevé le défi de l'interactivité avancée en JavaScript pour le projet Kusama. L'intégration de l'IA dans mon workflow m'a permis de dépasser mes blocages techniques et d'optimiser ma production pour livrer des produits finis de qualité professionnelle.</p>
+                        </div>
+                        <div class="competence-sliders">
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 1</span>
+                                    <span class="slider-percentage">15%</span>
+                                </div>
+                                <div class="slider-bar developper-slider" style="--percentage: 15%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 2</span>
+                                    <span class="slider-percentage">50%</span>
+                                </div>
+                                <div class="slider-bar developper-slider" style="--percentage: 50%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 3</span>
+                                    <span class="slider-percentage">80%</span>
+                                </div>
+                                <div class="slider-bar developper-slider" style="--percentage: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entreprendre -->
+                <div class="competence-content entreprendre-content" data-competence="entreprendre">
+                    <div class="competence-layout">
+                        <div class="competence-text">
+                            <p>Je suis passée de la gestion de mes propres tâches à la coordination de projets d'envergure.</p>
+                            <p>En BUT 1, j'ai appris la rigueur individuelle et la gestion de mon identité numérique.</p>
+                            <p>En BUT2, la MMI LAN a été le tournant de mon évolution, grâce à mon rôle de coordinatrice d'événement, gérant l'imprévu et la communication. J’ai également fait mes premiers pas dans le domaine professionnel, grâce à mon stage au sein du Musée d'Histoire de Marseille. </p>
+                            <p>Enfin, en BUT 3, mon alternance chez 3B PRO a fini de professionnaliser cette compétence, en me confiant la responsabilité de la communication externe et de la direction artistique en autonomie totale face à des clients réels.</p>
+                        </div>
+                        <div class="competence-sliders">
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 1</span>
+                                    <span class="slider-percentage">18%</span>
+                                </div>
+                                <div class="slider-bar entreprendre-slider" style="--percentage: 18%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 2</span>
+                                    <span class="slider-percentage">52%</span>
+                                </div>
+                                <div class="slider-bar entreprendre-slider" style="--percentage: 52%"></div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-header">
+                                    <span class="slider-label">BUT 3</span>
+                                    <span class="slider-percentage">75%</span>
+                                </div>
+                                <div class="slider-bar entreprendre-slider" style="--percentage: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -27,6 +27,74 @@ function initializeEventListeners() {
         });
     });
 
+    // Event listeners pour les filtres de compétences (amelioration.html)
+    const competenceFilterButtons = document.querySelectorAll('.competence-filter-btn');
+    
+    // Ajouter la classe animate aux sliders du contenu initial
+    const initialContent = document.querySelector('.competence-content.active');
+    if (initialContent) {
+        initialContent.querySelectorAll('.slider-bar').forEach(bar => {
+            bar.classList.add('animate');
+        });
+    }
+    
+    competenceFilterButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const competence = e.target.getAttribute('data-competence');
+            
+            // Mettre à jour les styles des boutons
+            competenceFilterButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            e.target.classList.add('active');
+            
+            // Fade out du contenu actuel
+            const currentContent = document.querySelector('.competence-content.active');
+            if (currentContent) {
+                currentContent.classList.add('fade-out');
+                
+                // Attendre la fin de l'animation de fade out
+                setTimeout(() => {
+                    // Masquer tout le contenu
+                    const allContents = document.querySelectorAll('.competence-content');
+                    allContents.forEach(content => {
+                        content.classList.remove('active');
+                        content.classList.remove('fade-out');
+                        // Retirer la classe animate des sliders du contenu précédent
+                        content.querySelectorAll('.slider-bar').forEach(bar => {
+                            bar.classList.remove('animate');
+                        });
+                    });
+                    
+                    // Afficher le contenu sélectionné (fade in)
+                    const selectedContent = document.querySelector(`.competence-content[data-competence="${competence}"]`);
+                    if (selectedContent) {
+                        selectedContent.classList.add('active');
+                        
+                        // Ajouter la classe reset aux sliders pour les mettre à 0%
+                        selectedContent.querySelectorAll('.slider-bar').forEach(bar => {
+                            bar.classList.add('reset');
+                        });
+                        
+                        // Au prochain frame, retirer reset et ajouter animate pour déclencher la transition
+                        requestAnimationFrame(() => {
+                            selectedContent.querySelectorAll('.slider-bar').forEach(bar => {
+                                bar.classList.remove('reset');
+                                bar.classList.add('animate');
+                            });
+                        });
+                    }
+                }, 300);
+            } else {
+                // Si aucun contenu actif (première visite), afficher directement
+                const selectedContent = document.querySelector(`.competence-content[data-competence="${competence}"]`);
+                if (selectedContent) {
+                    selectedContent.classList.add('active');
+                }
+            }
+        });
+    });
+
     // Active nav link
     updateActiveNavLink();
 
@@ -240,3 +308,4 @@ document.addEventListener('keydown', (e) => {
         // Comportement supplémentaire si nécessaire
     }
 });
+

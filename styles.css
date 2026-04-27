@@ -8,6 +8,27 @@
     --green-light: #D6F6DA;
     --white: #FBFDFF;
     --black: #010D2E;
+
+    --concevoir-bg: #FFD6BC;
+    --concevoir-text: #FC6805;
+    --concevoir-bg-act: #FC6805;
+    --concevoir-text-act: #FFFFFF;
+    --comprendre-bg: #FFD0D3;
+    --comprendre-text: #F10303;
+    --comprendre-bg-act: #F10303;
+    --comprendre-text-act: #FFFFFF;
+    --developper-bg: #C6E0B4;
+    --developper-text: #3B7300;
+    --developper-bg-act: #3B7300;
+    --developper-text-act: #FFFFFF;
+    --entreprendre-bg: #BDD7EE;
+    --entreprendre-text: #002060;
+    --entreprendre-bg-act: #002060;
+    --entreprendre-text-act: #FFFFFF;
+    --exprimer-bg: #FFE699;
+    --exprimer-text: #7C5E00;
+    --exprimer-bg-act: #FFD700;
+    --exprimer-text-act: #000000;
 }
 
 * {
@@ -390,53 +411,53 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Couleurs spécifiques pour les compétences */
 .filter-btn[data-filter="Concevoir"] {
-    color: #FC6805;
-    background-color: #FFD6BC;
+    color: var(--concevoir-text);
+    background-color: var(--concevoir-bg);
 }
 
 .filter-btn[data-filter="Concevoir"].active {
-    background: #FC6805;
-    color: white;
+    background: var(--concevoir-bg-act);
+    color: var(--concevoir-text-act);
 }
 
 .filter-btn[data-filter="Comprendre"] {
-    color: #F10303;
-    background-color: #FFD0D3;
+    color: var(--comprendre-text);
+    background-color: var(--comprendre-bg);
 }
 
 .filter-btn[data-filter="Comprendre"].active {
-    background: #F10303;
-    color: white;
+    background: var(--comprendre-bg-act);
+    color: var(--comprendre-text-act);
 }
 
 .filter-btn[data-filter="Développer"] {
-    color: #3B7300;
-    background-color: #C6E0B4;
+    color: var(--developper-text);
+    background-color: var(--developper-bg);
 }
 
 .filter-btn[data-filter="Développer"].active {
-    background: #3B7300;
-    color: white;
+    background: var(--developper-bg-act);
+    color: var(--developper-text-act);
 }
 
 .filter-btn[data-filter="Entreprendre"] {
-    color: #002060;
-    background-color: #BDD7EE;
+    color: var(--entreprendre-text);
+    background-color: var(--entreprendre-bg);
 }
 
 .filter-btn[data-filter="Entreprendre"].active {
-    background: #002060;
-    color: var(--white);
+    background: var(--entreprendre-bg-act);
+    color: var(--entreprendre-text-act);
 }
 
 .filter-btn[data-filter="Exprimer"] {
-    color: #7C5E00;
-    background-color: #FFE699;
+    color: var(--exprimer-text);
+    background-color: var(--exprimer-bg);
 }
 
 .filter-btn[data-filter="Exprimer"].active {
-    background: #ffd700;
-    color: var(--black);
+    background: var(--exprimer-bg-act);
+    color: var(--exprimer-text-act);
 }
 
 /* ===== PROJECTS GRID ===== */
@@ -719,7 +740,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .improvements-section-full {
     padding: 4rem 2rem;
-    background: var(--blue-light);
     text-align: center;
     animation: fadeIn 0.8s ease-out;
 }
@@ -727,11 +747,6 @@ h1, h2, h3, h4, h5, h6 {
 .improvements-container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.improvements-section-full h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 /* ===== ABOUT & CONTACT SECTIONS ===== */
@@ -817,6 +832,268 @@ h1, h2, h3, h4, h5, h6 {
     to {
         opacity: 1;
     }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fillSlider {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--percentage, 0%);
+    }
+}
+
+/* ===== IMPROVEMENTS PAGE (amelioration.html) ===== */
+
+/* Competence Filter Buttons */
+.competence-filters {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.competence-filter-btn {
+    padding: 0.8rem 1.5rem;
+    border: 0px solid var(--black);
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: -0.32px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Color mapping for each competence */
+.competence-filter-btn.comprendre {
+    color: var(--comprendre-text);
+    background-color: var(--comprendre-bg);
+}
+
+.competence-filter-btn.comprendre.active {
+    --button-color: var(--comprendre-bg-act);
+    color: var(--comprendre-text-act);
+}
+
+.competence-filter-btn.concevoir {
+    color: var(--concevoir-text);
+    background-color: var(--concevoir-bg);
+}
+
+.competence-filter-btn.concevoir.active {
+    --button-color: var(--concevoir-bg-act);
+    color: var(--concevoir-text-act);
+}
+
+.competence-filter-btn.exprimer {
+    color: var(--exprimer-text);
+    background-color: var(--exprimer-bg);
+}
+
+.competence-filter-btn.exprimer.active {
+    --button-color: var(--exprimer-bg-act);
+    color: var(--exprimer-text-act);
+}
+
+.competence-filter-btn.developper {
+    color: var(--developper-text);
+    background-color: var(--developper-bg);
+}
+
+.competence-filter-btn.developper.active {
+    --button-color: var(--developper-bg-act);
+    color: var(--developper-text-act);
+}
+
+.competence-filter-btn.entreprendre {
+    color: var(--entreprendre-text);
+    background-color: var(--entreprendre-bg);
+}
+
+.competence-filter-btn.entreprendre.active {
+    --button-color: var(--entreprendre-bg-act);
+    color: var(--entreprendre-text-act);
+}
+
+.competence-filter-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(1, 13, 46, 0.2);
+}
+
+.competence-filter-btn.active {
+    background-color: var(--button-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Competence Content */
+.competence-content-area {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.competence-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.competence-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.competence-content.fade-out {
+    animation: fadeOut 0.3s ease-out forwards;
+}
+
+.competence-text {
+    flex: 1;
+    min-width: 0;
+    animation: fadeIn 0.3s ease-in 0.3s both;
+}
+
+.competence-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--black);
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+/* Layout: Text + Sliders side by side */
+.competence-layout {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.competence-sliders {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--blue-light);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+/* Slider Item */
+.slider-item {
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.slider-item:last-child {
+    margin-bottom: 0;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.slider-label {
+    font-weight: 600;
+    color: var(--blue-dark);
+    font-size: 0.95rem;
+}
+
+.slider-percentage {
+    font-weight: 700;
+    color: var(--blue-dark);
+    font-size: 1rem;
+}
+
+/* Slider Bar */
+.slider-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #FFE4F0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: var(--percentage, 0%);
+    border-radius: 10px;
+    background-color: currentColor;
+}
+
+/* Réinitialisation des sliders à 0% */
+.slider-bar.reset::before {
+    width: 0% !important;
+}
+
+/* Transition de remplissage des sliders */
+.slider-bar.animate::before {
+    transition: width 0.8s ease-out 0.4s;
+}
+
+/* Color variants for different competences */
+.comprendre-slider {
+    background-color: var(--comprendre-bg);
+    color: var(--comprendre-bg-act);
+}
+
+.comprendre-slider::before {
+    background-color: var(--comprendre-bg-act);
+}
+
+.concevoir-slider {
+    background-color: var(--concevoir-bg);
+    color: var(--concevoir-bg-act);
+}
+
+.concevoir-slider::before {
+    background-color: var(--concevoir-bg-act);
+}
+
+.exprimer-slider {
+    background-color: var(--exprimer-bg);
+    color: var(--exprimer-bg-act);
+}
+
+.exprimer-slider::before {
+    background-color: var(--exprimer-bg-act);
+}
+
+.developper-slider {
+    background-color: var(--developper-bg);
+    color: var(--developper-bg-act);
+}
+
+.developper-slider::before {
+    background-color: var(--developper-bg-act);
+}
+
+.entreprendre-slider {
+    background-color: var(--entreprendre-bg);
+    color: var(--entreprendre-bg-act);
+}
+
+.entreprendre-slider::before {
+    background-color: var(--entreprendre-bg-act);
 }
 
 /* ===== FOOTER ===== */
@@ -934,6 +1211,29 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.9rem;
     }
 
+    /* Improvements Page Responsive */
+    .competence-filters {
+        gap: 0.8rem;
+    }
+
+    .competence-filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .competence-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .competence-sliders {
+        min-width: 100%;
+    }
+
+    .competence-text p {
+        font-size: 0.95rem;
+    }
+
     .footer-content {
         flex-direction: column;
         gap: 1rem;
@@ -1037,8 +1337,14 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.75rem;
     }
 
-    .project-title {
-        font-size: 1rem;
+    /* Improvements Page Responsive Mobile */
+    .competence-filters {
+        gap: 0.5rem;
+    }
+
+    .competence-filter-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
     }
 
     .project-description {
@@ -1059,5 +1365,38 @@ h1, h2, h3, h4, h5, h6 {
 
     .logo {
         font-size: 1.2rem;
+    }
+
+    /* Improvements Page Responsive Mobile */
+    .competence-filters {
+        gap: 0.5rem;
+    }
+
+    .competence-filter-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .competence-layout {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .competence-text p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .competence-sliders {
+        padding: 1.5rem;
+        min-width: 100%;
+    }
+
+    .slider-label {
+        font-size: 0.85rem;
+    }
+
+    .slider-percentage {
+        font-size: 0.9rem;
     }
 }
