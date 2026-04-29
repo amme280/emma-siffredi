@@ -32,34 +32,47 @@
     </nav>
 
     <!-- Contact Section -->
-    <section class="contact-section" style="margin-top: 60px; min-height: calc(100vh - 60px);">
-        <div class="contact-container">
-            <h1 style="font-size: 3rem; margin-bottom: 2rem; color: white;">Contact</h1>
-            <div style="max-width: 600px; margin: 0 auto; background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 15px;">
-                <form style="display: flex; flex-direction: column; gap: 1.5rem;">
-                    <div>
-                        <label style="display: block; margin-bottom: 0.5rem; color: white; font-weight: 600;">Nom</label>
-                        <input type="text" placeholder="Votre nom" style="width: 100%; padding: 0.8rem; border: none; border-radius: 5px; font-family: 'Poppins', sans-serif;">
-                    </div>
-                    <div>
-                        <label style="display: block; margin-bottom: 0.5rem; color: white; font-weight: 600;">Email</label>
-                        <input type="email" placeholder="votre.email@exemple.com" style="width: 100%; padding: 0.8rem; border: none; border-radius: 5px; font-family: 'Poppins', sans-serif;">
-                    </div>
-                    <div>
-                        <label style="display: block; margin-bottom: 0.5rem; color: white; font-weight: 600;">Message</label>
-                        <textarea placeholder="Votre message..." rows="5" style="width: 100%; padding: 0.8rem; border: none; border-radius: 5px; font-family: 'Poppins', sans-serif; resize: vertical;"></textarea>
-                    </div>
-                    <button type="submit" style="background: var(--pink-dark); color: white; padding: 1rem; border: none; border-radius: 5px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; font-family: 'Poppins', sans-serif; font-size: 1rem;">
-                        Envoyer
-                    </button>
-                </form>
+    <section class="contact-section-full improvements-section-full">
+        <div class="improvements-container">
+            <div class="projects-title-wrapper">
+                <h1 class="projects-title">Me contacter</h1>
+                <div class="projects-line"></div>
+            </div>
 
-                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.3);">
-                    <h2 style="color: white; margin-bottom: 1rem;">Autre Information</h2>
-                    <p style="color: white; margin-bottom: 0.5rem;">📧 Email: emma.siffredi@exemple.com</p>
-                    <p style="color: white; margin-bottom: 0.5rem;">📱 Téléphone: +33 6 XX XX XX XX</p>
-                    <p style="color: white;">📍 Localisation: Troyes, France</p>
-                </div>
+            <!-- Contact Cards -->
+            <div class="contact-grid">
+                
+                <!-- Email Card -->
+                <a href="mailto:siffrediemma@gmail.com" class="contact-card-link">
+                    <div class="contact-card">
+                        <div><img src="image/mail.png" class="contact-card-logo" alt="Email"></div>
+                        <h3>Email</h3>
+                        <p>siffrediemma@gmail.fr</p>
+                    </div>
+                </a>
+
+                <!-- Phone Card -->
+                <a class="contact-card-link">
+                    <div class="contact-card">
+                        <div><img src="image/telephone.png" class="contact-card-logo" alt="telephone"></div>
+                        <h3>Téléphone</h3>
+                        <p>07 83 65 59 97</p>
+                    </div>
+                </a>
+
+                <!-- LinkedIn Card -->
+                <a href="https://www.linkedin.com/in/emma-siffredi/" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                    <div class="contact-card">
+                        <div><img src="image/linkedin.png" class="contact-card-logo" alt="LinkedIn"></div>
+                        <h3>LinkedIn</h3>
+                        <p>Voir mon profil</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="contact-info">
+                <p>Basée à Toulon, France</p>
             </div>
         </div>
     </section>
@@ -67,7 +80,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Emma Siffredi</p>
+            <p>&copy; 2026 Emma Siffredi</p>
             <div class="social-links">
                 <a href="#linkedin" class="social-icon">in</a>
                 <a href="#email" class="social-icon">✉</a>

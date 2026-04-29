@@ -194,6 +194,11 @@ function filterProjects(competence) {
 function renderProjects(projects) {
     const grid = document.getElementById('projectsGrid');
     
+    // Vérifier si la grille de projets existe (ne pas exécuter sur les autres pages)
+    if (!grid) {
+        return;
+    }
+    
     // Vérifier si c'est une pépine de projets liés
     const relatedIds = grid.getAttribute('data-related-ids');
     let filteredProjects = projects;

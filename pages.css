@@ -67,6 +67,19 @@
     gap: 10px;
 }
 
+.subtitle-bleu {
+    font-family: 'Antonio', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--blue-dark);
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .difficulty{
     flex: auto;
     display: flex;
@@ -297,6 +310,13 @@ html, body {
     background: var(--white);
 }
 
+.project-production-propos {
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: var(--white);
+}
+
 .project-production-container {
     max-width: 1090px;
     margin: 0 auto;
@@ -337,6 +357,7 @@ html, body {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
+    gap: 1.5rem;
 }
 
 .production-block-gallery {
@@ -448,8 +469,16 @@ html, body {
     padding-top: 1rem;
 }
 
+.button-next-project {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding: 0.8rem 1.5rem;
+}
+
 .improvements-btn {
-    padding: 10px 20px;
+    padding: 0.8rem 1.5rem;
     background-color: var(--blue-dark);
     color: white;
     border: none;
@@ -461,8 +490,26 @@ html, body {
     display: inline-block;
 }
 
+.next-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--pink-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
 .improvements-btn:hover {
     background-color: var(--pink-dark);
+    transform: scale(1.05);
+}
+
+.next-btn:hover {
+    background-color: var(--blue-dark);
     transform: scale(1.05);
 }
 

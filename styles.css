@@ -333,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 65px;
     margin-bottom: 1rem;
     width: 100%;
+    color: var(--blue-dark);
 }
 
 .projects-title {
@@ -731,11 +732,37 @@ h1, h2, h3, h4, h5, h6 {
     animation: fadeInUp 0.6s ease-out 0.3s backwards;
 }
 
+.next-btn {
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    animation: fadeInUp 0.6s ease-out 0.3s backwards;
+}
+
 .improvements-btn:hover {
     background: var(--pink-dark);
     border-color: var(--pink-dark);
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(219, 53, 135, 0.3);
+}
+
+.next-btn:hover {
+    background: var(--blue-dark);
+    border-color: var(--blue-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 53, 219, 0.3);
 }
 
 .improvements-section-full {
@@ -947,12 +974,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .competence-content {
     display: none;
-    animation: fadeIn 0.3s ease-in;
 }
 
 .competence-content.active {
     display: block;
-    animation: fadeIn 0.3s ease-in;
+    animation: fadeIn 0.5s ease-in forwards;
 }
 
 .competence-content.fade-out {
@@ -962,7 +988,6 @@ h1, h2, h3, h4, h5, h6 {
 .competence-text {
     flex: 1;
     min-width: 0;
-    animation: fadeIn 0.3s ease-in 0.3s both;
 }
 
 .competence-text p {
@@ -1103,6 +1128,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
     text-align: center;
     animation: slideUp 0.6s ease-out;
+    margin-top: 3rem;
 }
 
 @keyframes slideUp {
@@ -1148,6 +1174,78 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-3px);
 }
 
+/* ===== CONTACT PAGE ===== */
+.contact-section-full {
+    margin-top: 60px;
+    padding: 4rem 2rem;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-card {
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: var(--blue-light);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--blue-dark);
+}
+
+.contact-card p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    color: var(--blue-dark);
+}
+
+.contact-info {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(1, 13, 46, 0.1);
+    text-align: center;
+}
+
+.contact-info p {
+    color: var(--blue-dark);
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
     .projects-grid {
@@ -1169,7 +1267,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .projects-title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .projects-grid {
@@ -1321,7 +1419,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .projects-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .projects-grid {
