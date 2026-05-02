@@ -715,10 +715,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .improvements-btn {
     display: inline-block;
-    background: var(--black);
+    background: var(--blue-dark);
     color: var(--white);
     padding: 0.8rem 2.5rem;
-    border-radius: 50px;
+    border-radius: 15px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -727,7 +727,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.4px;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    border: 2px solid var(--black);
+    border: 2px solid var(--blue-dark);
     cursor: pointer;
     animation: fadeInUp 0.6s ease-out 0.3s backwards;
 }
@@ -1251,6 +1251,23 @@ h1, h2, h3, h4, h5, h6 {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-card p {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1330,6 +1347,36 @@ h1, h2, h3, h4, h5, h6 {
 
     .competence-text p {
         font-size: 0.95rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1rem;
+    }
+
+    .contact-card p {
+        font-size: 0.85rem;
+    }
+
+    .contact-card-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-info {
+        margin-top: 3rem;
+    }
+
+    .contact-section-full {
+        padding: 2rem 1rem;
     }
 
     .footer-content {
@@ -1449,8 +1496,40 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.75rem;
     }
 
-    .project-year {
-        font-size: 0.65rem;
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1rem;
+    }
+
+    .contact-card p {
+        font-size: 0.8rem;
+    }
+
+    .contact-card-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-info {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .contact-section-full {
+        padding: 2rem 1rem;
+        min-height: auto;
     }
 
     .project-category {
