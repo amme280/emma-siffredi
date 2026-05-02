@@ -60,10 +60,10 @@
       "link": "mmi-lan.html",
       "domain": "Communication",
       "domainType": "communication",
-      "competences": ["Comprendre", "Exprimer", "Entreprendre"],
+      "competences": ["Concevoir", "Exprimer", "Entreprendre"],
       "year": "BUT MMI 2",
       "yearNumber": 2,
-      "tags": ["#Comprendre", "#Exprimer", "#Entreprendre", "#Événementiel", "#Live Twitch"]
+      "tags": ["#Concevoir", "#Exprimer", "#Entreprendre", "#Événementiel", "#Live Twitch"]
     },
     {
       "id": "6",
