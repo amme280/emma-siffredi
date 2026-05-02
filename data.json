@@ -54,6 +54,19 @@
     },
     {
       "id": "5",
+      "title": "MMI LAN 2024",
+      "description": "Organisation d'un événement gaming pour les étudiants du BUT MMI.",
+      "image": "image/statue of liberty.jpg",
+      "link": "mmi-lan.html",
+      "domain": "Communication",
+      "domainType": "communication",
+      "competences": ["Comprendre", "Exprimer", "Entreprendre"],
+      "year": "BUT MMI 2",
+      "yearNumber": 2,
+      "tags": ["#Comprendre", "#Exprimer", "#Entreprendre", "#Événementiel", "#Live Twitch"]
+    },
+    {
+      "id": "6",
       "title": "Portfolio personnel",
       "description": "Mon site internet personnel, mettant en avant mes projets et compétences.",
       "image": "image/portfolio/cover_portfolio.png",
@@ -66,7 +79,7 @@
       "tags": ["#Entreprendre", "#Développer", "#Professionnalisation", "#Web"]
     },
     {
-      "id": "6",
+      "id": "7",
       "title": "Santé VS Budget",
       "description": "Production d'une vidéo en motion design, présentant les données liées à une datavisualisation.",
       "image": "image/SVSB/cover_carte.png",
@@ -79,7 +92,7 @@
       "tags": ["#Comprendre", "#Exprimer", "#Motion Design", "#Datavisualisation"]
     },
     {
-      "id": "7",
+      "id": "8",
       "title": "Shinee",
       "description": "Shinee : la météo qui donne le smile. Application mobile de météo, incluant une datavisualisation temporelle. ",
       "image": "image/shinee/cover-carte.png",
@@ -92,7 +105,7 @@
       "tags": ["#Exprimer", "#Développer", "#Concevoir", "#Application", "#Webdesign"]
     },
     {
-      "id": "8",
+      "id": "9",
       "title": "Banka",
       "description": "Création d'une identité visuelle pour une banque fictive, adaptée aux étudiants et à leur mode de vie.",
       "image": "image/banka/cover_banka.png",
@@ -106,7 +119,7 @@
     },
 
     {
-      "id": "9",
+      "id": "10",
       "title": "Mes softs skills",
       "description": "Présentation de mes compétences professionnelles en vidéo.",
       "link": "soft_skills.html",
@@ -120,7 +133,7 @@
     },
 
     {
-      "id": "10",
+      "id": "11",
       "title": "Green Up",
       "description": "Conception d'un service répondant à une problématique liée au tourisme.",
       "link": "green-up.html",
@@ -134,7 +147,7 @@
     },
 
     {
-      "id": "11",
+      "id": "12",
       "title": "Brigitte",
       "description": "Conception d'un site web sous Wordpress.",
       "link": "wordpress.html",
@@ -148,7 +161,7 @@
     },
 
         {
-      "id": "12",
+      "id": "13",
       "title": "MMI Découverte",
       "description": "Conception d'un site web pour une agence de voyage fictive.",
       "link": "mmi_decouverte.html",

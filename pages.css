@@ -54,6 +54,23 @@
     letter-spacing: -0.32px;
 }
 
+.legend{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--black);
+    margin-top: 0.5rem;
+    letter-spacing: -0.28px;
+    width: 100%;
+}
+
+.image-legend{
+    width: 50%;
+}
+
+
 .subtitle {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
@@ -424,6 +441,20 @@ html, body {
     height: auto;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.prod-image-legend {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -435,7 +466,19 @@ html, body {
     transform: scale(1.05);
 }
 
+.prod-image-legend:hover {
+    transform: scale(1.05);
+}
+
 .prod-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.prod-image-legend img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1100,6 +1143,16 @@ html, body {
         aspect-ratio: 400 / 300;
     }
 
+    .prod-image-legend {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 400 / 300;
+    }
+
+    .image-legend{
+        width: 100%;
+    }
+
     .production-gallery {
         width: 100%;
         max-width: 100%;
@@ -1111,6 +1164,7 @@ html, body {
 
     .production-gallery-2col {
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 2rem;
     }
 
     .production-gallery .prod-image {
@@ -1233,6 +1287,16 @@ html, body {
         width: 100%;
         height: auto;
     }
+
+    .prod-image-legend{
+        width: 100%;
+        height: auto;
+    }
+
+    .image-legend{
+        width: 100%;
+    }
+
     .production-gallery {
         width: 100%;
         max-width: 100%;
@@ -1244,6 +1308,7 @@ html, body {
 
     .production-gallery-2col {
         grid-template-columns: 1fr;
+        margin-top: 2rem;
     }
 
     .production-gallery .prod-image {
