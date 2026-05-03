@@ -29,9 +29,9 @@
     {
       "id": "3",
       "title": "Alternance Print",
-      "description": "Lorem ipsum dolor sit amet consectetur. Laoreet rhoncus integer gravida potenti pulvinar vel ut. Cursus ante lacus varius eleifend lorem convallis in. Risus turpis curabitur et.",
+      "description": "Les différents éléments de communication visuelle réalisés durant mon alternance en troisième année du BUT MMI, au sein de l'entreprise 3B PRO.",
       "image": "image/statue of liberty.jpg",
-      "link": "#",
+      "link": "alternance.html",
       "domain": "Création Numérique",
       "domainType": "creation",
       "competences": ["Exprimer"],
