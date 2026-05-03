@@ -1178,6 +1178,10 @@ html, body {
     .encadre{
         margin-bottom: 3rem;
     }
+
+    .button-next-project{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1332,6 +1336,10 @@ html, body {
 
     .encadre{
         margin-bottom: 3rem;
+    }
+
+    .button-next-project{
+        justify-content: center;
     }
 }
 
