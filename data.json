@@ -11,7 +11,9 @@
       "competences": ["Entreprendre", "Exprimer"],
       "year": "BUT MMI 3",
       "yearNumber": 3,
-      "tags": ["#Entreprendre", "#Exprimer", "#Médiation", "#Immersion"]
+      "proLabel": "Université",
+      "tags": ["#Entreprendre", "#Exprimer", "#Médiation", "#Immersion"],
+      "proTags": ["#BUT MMI 3", "#Médiation", "#Immersion"]
     },
     {
       "id": "2",
@@ -24,7 +26,9 @@
       "competences": ["Exprimer", "Entreprendre"],
       "year": "BUT MMI 3",
       "yearNumber": 3,
-      "tags": ["#Exprimer", "#Entreprendre", "#Décor Numérique", "#Projection", "#Vidéo"]
+      "proLabel": "Université",
+      "tags": ["#Exprimer", "#Entreprendre", "#Décor Numérique", "#Projection", "#Vidéo"],
+      "proTags": ["#BUT MMI 3", "#Décor Numérique", "#Projection", "#Vidéo"]
     },
     {
       "id": "3",
@@ -37,7 +41,9 @@
       "competences": ["Exprimer"],
       "year": "BUT MMI 3",
       "yearNumber": 3,
-      "tags": ["#Exprimer", "#Print", "#Communication visuelle"]
+      "proLabel": "Alternance",
+      "tags": ["#Exprimer", "#Print", "#Communication visuelle"],
+      "proTags": ["#Alternance", "#Print", "#Communication visuelle"]
     },
     {
       "id": "4",
@@ -50,7 +56,9 @@
       "competences": ["Comprendre", "Entreprendre"],
       "year": "BUT MMI 2",
       "yearNumber": 2,
-      "tags": ["#Comprendre", "#Entreprendre", "#Magazine", "#Print"]
+      "proLabel": "Stage",
+      "tags": ["#Comprendre", "#Entreprendre", "#Magazine", "#Print"],
+      "proTags": ["#Stage", "#Magazine", "#Print"]
     },
     {
       "id": "5",
@@ -63,7 +71,9 @@
       "competences": ["Concevoir", "Exprimer", "Entreprendre"],
       "year": "BUT MMI 2",
       "yearNumber": 2,
-      "tags": ["#Concevoir", "#Exprimer", "#Entreprendre", "#Événementiel", "#Live Twitch"]
+      "proLabel": "Université",
+      "tags": ["#Concevoir", "#Exprimer", "#Entreprendre", "#Événementiel", "#Live Twitch"],
+      "proTags": ["#BUT MMI 2", "#Événementiel", "#Live Twitch"]
     },
     {
       "id": "6",
@@ -76,7 +86,9 @@
       "competences": ["Entreprendre", "Développer"],
       "year": "BUT MMI 2",
       "yearNumber": 2,
-      "tags": ["#Entreprendre", "#Développer", "#Professionnalisation", "#Web"]
+      "proLabel": "Personnel",
+      "tags": ["#Entreprendre", "#Développer", "#Professionnalisation", "#Web"],
+      "proTags": ["#Personnel", "#Professionnalisation", "#Web"]
     },
     {
       "id": "7",
@@ -89,7 +101,9 @@
       "competences": ["Comprendre", "Exprimer"],
       "year": "BUT MMI 2",
       "yearNumber": 2,
-      "tags": ["#Comprendre", "#Exprimer", "#Motion Design", "#Datavisualisation"]
+      "proLabel": "Université",
+      "tags": ["#Comprendre", "#Exprimer", "#Motion Design", "#Datavisualisation"],
+      "proTags": ["#BUT MMI 2", "#Motion Design", "#Datavisualisation"]
     },
     {
       "id": "8",
@@ -102,7 +116,9 @@
       "competences": ["Exprimer", "Développer", "Concevoir"],
       "year": "BUT MMI 2",
       "yearNumber": 2,
-      "tags": ["#Exprimer", "#Développer", "#Concevoir", "#Application", "#Webdesign"]
+      "proLabel": "Université",
+      "tags": ["#Exprimer", "#Développer", "#Concevoir", "#Application", "#Webdesign"],
+      "proTags": ["#BUT MMI 2", "#Application", "#Webdesign"]
     },
     {
       "id": "9",
@@ -115,7 +131,9 @@
       "competences": ["Exprimer"],
       "year": "BUT MMI 1",
       "yearNumber": 1,
-      "tags": ["#Exprimer", "#Identité visuelle", "#Charte graphique"]
+      "proLabel": "Université",
+      "tags": ["#Exprimer", "#Identité visuelle", "#Charte graphique"],
+      "proTags": ["#BUT MMI 1", "#Identité visuelle", "#Charte graphique"]
     },
 
     {
@@ -129,7 +147,9 @@
       "competences": ["Exprimer"],
       "year": "BUT MMI 1",
       "yearNumber": 1,
-      "tags": ["#Exprimer", "#Vidéo", "#Montage"]
+      "proLabel": "Université",
+      "tags": ["#Exprimer", "#Vidéo", "#Montage"],
+      "proTags": ["#BUT MMI 1", "#Vidéo", "#Montage"]
     },
 
     {
@@ -143,7 +163,9 @@
       "competences": ["Concevoir"],
       "year": "BUT MMI 1",
       "yearNumber": 1,
-      "tags": ["#Concevoir", "#Brevet", "#Documentation légale"]
+      "proLabel": "Université",
+      "tags": ["#Concevoir", "#Brevet", "#Documentation légale"],
+      "proTags": ["#BUT MMI 1", "#Brevet", "#Documentation légale"]
     },
 
     {
@@ -157,7 +179,9 @@
       "competences": ["Développer"],
       "year": "BUT MMI 1",
       "yearNumber": 1,
-      "tags": ["#Développer", "#Wordpress", "#Webdesign"]
+      "proLabel": "Université",
+      "tags": ["#Développer", "#Wordpress", "#Webdesign"],
+      "proTags": ["#BUT MMI 1", "#Wordpress", "#Webdesign"]
     },
 
         {
@@ -171,7 +195,9 @@
       "competences": ["Développer", "Exprimer"],
       "year": "BUT MMI 1",
       "yearNumber": 1,
-      "tags": ["#Développer", "#Exprimer", "#Webdesign", "#HTML", "#CSS"]
+      "proLabel": "Université",
+      "tags": ["#Développer", "#Exprimer", "#Webdesign", "#HTML", "#CSS"],
+      "proTags": ["#BUT MMI 1", "#Webdesign", "#HTML", "#CSS"]
     }
   ]
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Siffredi - Portfolio Académique</title>
+    <title>Emma Siffredi - Alternance</title>
     <link rel="icon" type="image/png" href="image/FAVICON.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,14 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html#projects" class="nav-link">Mes projets</a></li>
-                <li><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
+                <li class="academic-only"><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
                 <li><a href="apropos.html" class="nav-link">À propos</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="version-toggle" aria-label="Changer de version">
+                        <img src="image/bouton-pro.png" class="btn-pro" alt="Version Professionnelle">
+        
+                        <img src="image/bouton-ac.png" class="btn-academic" alt="Version Académique">
+                </button></li>            
             </ul>
         </div>
     </nav>
@@ -45,8 +50,10 @@
                     <span class="landing-tag">Print</span>
                     <span class="landing-tag">Communication visuelle</span>
                 </div>
-                <div class="landing-tags-right">
-                    <span class="competence-badge exprimer">Exprimer</span>
+                <div class="academic-only">
+                    <div class="landing-tags-right">
+                        <span class="competence-badge exprimer">Exprimer</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -268,34 +275,37 @@
 
 
     <!-- Critical Learning Section -->
-    <section class="project-learnings">
-        <div class="project-learnings-container">
-            <div class="production-title-wrapper">
-                <h2>Apprentissages critiques</h2>
-                <div class="production-title-line"></div>
-            </div>
+    <section class="project-learnings academic-only">
+        <div class="academic-only">
+            <div class="project-learnings-container">
+                <div class="production-title-wrapper">
+                    <h2>Apprentissages critiques</h2>
+                    <div class="production-title-line"></div>
+                </div>
 
-            <p class="basic-text">
-                    Mon alternance m'a permis d'appréhender les enjeux de la direction artistique dans un contexte professionnel réel (<span class="ac-link" data-ac="33.05">AC 33.05</span>). Face à une charte graphique limitée, j'ai dû créer une identité visuelle cohérente de toute pièce.
+                <p class="basic-text">
+                        Mon alternance m'a permis d'appréhender les enjeux de la direction artistique dans un contexte professionnel réel (<span class="ac-link" data-ac="33.05">AC 33.05</span>). Face à une charte graphique limitée, j'ai dû créer une identité visuelle cohérente de toute pièce.
 
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- Personal Analysis Section -->
-    <section class="project-learnings">
-        <div class="project-learnings-container">
-            <div class="production-title-wrapper">
-                <h2>Analyse personnelle</h2>
-                <div class="production-title-line"></div>
-            </div>
+    <section class="project-learnings academic-only">
+        <div class="academic-only">
+            <div class="project-learnings-container">
+                <div class="production-title-wrapper">
+                    <h2>Analyse personnelle</h2>
+                    <div class="production-title-line"></div>
+                </div>
 
-            <p class="basic-text">Ma réussite majeure a été la standardisation de la communication de l'entreprise. En déclinant les couvertures de catalogues et en adaptant les supports pour les différentes branches (PPI/WPC), j'ai fourni aux commerciaux des outils professionnels et harmonisés.  </p>
-                <p>
-                    Aujourd'hui, mon axe d'amélioration principal serait de créer une charte graphique complète, afin d’établir une véritable identité visuelle pour l’entreprise.
-                </p>
+                <p class="basic-text">Ma réussite majeure a été la standardisation de la communication de l'entreprise. En déclinant les couvertures de catalogues et en adaptant les supports pour les différentes branches (PPI/WPC), j'ai fourni aux commerciaux des outils professionnels et harmonisés.  </p>
+                    <p>
+                        Aujourd'hui, mon axe d'amélioration principal serait de créer une charte graphique complète, afin d’établir une véritable identité visuelle pour l’entreprise.
+                    </p>
             </div>
         </div>
     </section>

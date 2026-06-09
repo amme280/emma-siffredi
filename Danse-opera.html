@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Siffredi - Portfolio Académique</title>
+    <title>Emma Siffredi - Danse à l'Opéra</title>
     <link rel="icon" type="image/png" href="image/FAVICON.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,14 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html#projects" class="nav-link">Mes projets</a></li>
-                <li><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
+                <li class="academic-only"><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
                 <li><a href="apropos.html" class="nav-link">À propos</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="version-toggle" aria-label="Changer de version">
+                        <img src="image/bouton-pro.png" class="btn-pro" alt="Version Professionnelle">
+        
+                        <img src="image/bouton-ac.png" class="btn-academic" alt="Version Académique">
+                </button></li>            
             </ul>
         </div>
     </nav>
@@ -46,9 +51,11 @@
                     <span class="landing-tag">Projection</span>
                     <span class="landing-tag">Vidéo</span>
                 </div>
-                <div class="landing-tags-right">
-                    <span class="competence-badge exprimer">Exprimer</span>
-                    <span class="competence-badge entreprendre">Entreprendre</span>
+                <div class="academic-only">
+                    <div class="landing-tags-right">
+                        <span class="competence-badge exprimer">Exprimer</span>
+                        <span class="competence-badge entreprendre">Entreprendre</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,8 +119,10 @@
                         <p class="basic-text-reduit">
                              J’ai pris en main une partie de la gestion du projet en commençant par définir nos objectifs de réalisation. De plus, j’ai mis en place les principaux jalons de validation (internes et externes). Cela nous a permis d’améliorer notre travail au fur et à mesure, en fonction des différents retours. Il était aussi essentiel que chacun soit au courant de l’avancement des autres pour rester bien coordonnés.
                         </p>
-                        <div class="production-skills">
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                        <div class="academic-only">
+                            <div class="production-skills">
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,7 +144,9 @@
                             <img class="lightning" src="image/eclair.svg" alt="éclair">Cependant, le but était d’accompagner les danseurs, sans leur voler la vedette. Cela nous a limités dans notre créativité, et nous a poussés à trouver des solutions.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge exprimer">Exprimer</span>
+                            <div class="academic-only">
+                                <span class="competence-badge exprimer">Exprimer</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Première Pro, After Effects</span>
                         </div>
                     </div>
@@ -154,7 +165,9 @@
                             <img class="lightning" src="image/eclair.svg" alt="éclair">Au niveau technique, j’ai eu quelques difficultés à créer un univers technologique complet, accompagné par un léger jeu de lumière, tout en limitant l’impact visuel. 
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge exprimer">Exprimer</span>
+                            <div class="academic-only">
+                                <span class="competence-badge exprimer">Exprimer</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Illustrator, Première Pro, After Effects</span>
                         </div>
                     </div>
@@ -178,8 +191,10 @@
                             J’ai entièrement réalisé la vidéo promotionnelle d’une minute pour le jour de la soutenance. De l’écriture du scénario jusqu’au montage final, je me suis occupée de produire une vidéo courte et impactante pour représenter au mieux notre collaboration avec le lycée Dumont d’Urville.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge exprimer">Exprimer</span>
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge exprimer">Exprimer</span>
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Première Pro, After Effects</span>
                         </div>
                     </div>
@@ -195,8 +210,10 @@
                             Enfin, nous avons réalisé la vidéo finale du projet, en intégrant les différentes parties que nous avions produites. Chacun a réalisé une partie de la vidéo, et nous avons ensuite synchronisé notre travail pour produire une vidéo finale cohérente et fluide. Nous avons pris en compte les retours créatifs des commanditaires, ainsi que les contraintes techniques liées à la projection du décor.
                         </p> 
                         <div class="production-skills">
-                            <span class="competence-badge exprimer">Exprimer</span>
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge exprimer">Exprimer</span>
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Première Pro, After Effects</span>
                         </div>
                     </div>
@@ -212,7 +229,7 @@
 
 
     <!-- Critical Learning Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Apprentissages critiques</h2>
@@ -229,7 +246,7 @@
 
 
     <!-- Personal Analysis Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Analyse personnelle</h2>

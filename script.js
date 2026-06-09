@@ -20,6 +20,9 @@ async function fetchProjects() {
 }
 
 function initializeEventListeners() {
+    // Générer les filtres dynamiquement
+    generateFilters();
+    
     // Event listeners pour les filtres
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -159,6 +162,41 @@ window.addEventListener('scroll', updateActiveNavLink);
 window.addEventListener('hashchange', updateActiveNavLink);
 
 // ===== FILTER HANDLING =====
+// Générer les filtres dynamiquement selon le mode
+function generateFilters() {
+    const filtersContainer = document.getElementById('filtersContainer');
+    if (!filtersContainer) return;
+
+    const isProMode = document.body.classList.contains('mode-academique') === false;
+    
+    let filters = [];
+    if (isProMode) {
+        // Mode professionnel : trier par proLabel
+        filters = ['all', 'Alternance', 'Stage', 'Personnel', 'Université'];
+    } else {
+        // Mode académique : trier par compétences
+        filters = ['all', 'Comprendre', 'Concevoir', 'Exprimer', 'Développer', 'Entreprendre'];
+    }
+
+    // Générer les boutons de filtre
+    filtersContainer.innerHTML = filters.map((filter, index) => {
+        const label = filter === 'all' ? 'Tous' : filter.charAt(0).toUpperCase() + filter.slice(1);
+        const isActive = index === 0 ? 'active' : '';
+        return `<button class="filter-btn ${isActive}" data-filter="${filter}">${label}</button>`;
+    }).join('');
+
+    // Réattacher les event listeners
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            handleFilterClick(e);
+        });
+    });
+
+    // Réinitialiser le filtre courant
+    currentFilter = 'all';
+    renderProjects(projectsData);
+}
+
 function handleFilterClick(e) {
     const filterValue = e.target.getAttribute('data-filter');
     currentFilter = filterValue;
@@ -169,12 +207,20 @@ function handleFilterClick(e) {
     });
     e.target.classList.add('active');
 
-    // Filtrer et afficher les projets
-    filterProjects(filterValue);
+    // Filtrer et afficher les projets selon le mode
+    const isProMode = document.body.classList.contains('mode-academique') === false;
+    if (isProMode) {
+        filterProjectsByProLabel(filterValue);
+    } else {
+        filterProjects(filterValue);
+    }
 }
 
 function filterProjects(competence) {
     let filtered = projectsData;
+    const isProMode = document.body.classList.contains('mode-academique') === false && 
+                      document.querySelectorAll('.filter-btn').length > 0 && 
+                      document.body.classList.contains('mode-academique') === false;
 
     if (competence !== 'all') {
         filtered = projectsData.filter(project => 
@@ -185,6 +231,27 @@ function filterProjects(competence) {
     // Trier par année (3, 2, 1)
     filtered.sort((a, b) => {
         return b.yearNumber - a.yearNumber;
+    });
+
+    renderProjects(filtered);
+}
+
+// ===== PRO MODE FILTER =====
+function getProLabelOrder(label) {
+    const order = { 'alternance': 1, 'stage': 2, 'personnel': 3, 'université': 4 };
+    return order[label] || 5;
+}
+
+function filterProjectsByProLabel(label) {
+    let filtered = projectsData;
+
+    if (label !== 'all') {
+        filtered = projectsData.filter(project => project.proLabel === label);
+    }
+
+    // Trier par proLabel
+    filtered.sort((a, b) => {
+        return getProLabelOrder(a.proLabel) - getProLabelOrder(b.proLabel);
     });
 
     renderProjects(filtered);
@@ -226,8 +293,13 @@ function renderProjects(projects) {
 function createProjectCard(project) {
     const domainClass = getDomainClass(project.domainType);
     const yearClass = `year-${project.yearNumber}`;
+    const isProMode = document.body.classList.contains('mode-academique') === false;
 
-    const tagsHTML = project.tags
+    // Utiliser les tags et labels selon le mode
+    const tags = isProMode ? (project.proTags || project.tags) : project.tags;
+    const label = isProMode ? project.proLabel : project.year;
+
+    const tagsHTML = tags
         .map(tag => `<span class="project-tag">${tag}</span>`)
         .join('');
 
@@ -244,7 +316,7 @@ function createProjectCard(project) {
                 <div class="project-content">
                     <div class="project-title-row">
                         <h3 class="project-title">${project.title}</h3>
-                        <span class="project-year">${project.year}</span>
+                        <span class="project-year">${label}</span>
                     </div>
                     <p class="project-description">${project.description}</p>
                     <div class="project-tags">

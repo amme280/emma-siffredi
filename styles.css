@@ -496,6 +496,46 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--exprimer-text-act);
 }
 
+.filter-btn[data-filter="Alternance"] {
+    color: var(--comprendre-text);
+    background-color: var(--comprendre-bg);
+}
+
+.filter-btn[data-filter="Alternance"].active {
+    background: var(--comprendre-bg-act);
+    color: var(--comprendre-text-act);
+}
+
+.filter-btn[data-filter="Stage"] {
+    color: var(--concevoir-text);
+    background-color: var(--concevoir-bg);
+}
+
+.filter-btn[data-filter="Stage"].active {
+    background: var(--concevoir-bg-act);
+    color: var(--concevoir-text-act);
+}
+
+.filter-btn[data-filter="Personnel"] {
+    color: var(--exprimer-text);
+    background-color: var(--exprimer-bg);
+}
+
+.filter-btn[data-filter="Personnel"].active {
+    background: var(--exprimer-bg-act);
+    color: var(--exprimer-text-act);
+}
+
+.filter-btn[data-filter="Université"] {
+    color: var(--developper-text);
+    background-color: var(--developper-bg);
+}
+
+.filter-btn[data-filter="Université"].active {
+    background: var(--developper-bg-act);
+    color: var(--developper-text-act);
+}
+
 /* ===== PROJECTS GRID ===== */
 .projects-grid {
     display: grid;

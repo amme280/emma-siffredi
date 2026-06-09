@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Siffredi - Portfolio Académique</title>
+    <title>Emma Siffredi - MMI LAN 2024</title>
     <link rel="icon" type="image/png" href="image/FAVICON.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,14 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html#projects" class="nav-link">Mes projets</a></li>
-                <li><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
+                <li class="academic-only"><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
                 <li><a href="apropos.html" class="nav-link">À propos</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="version-toggle" aria-label="Changer de version">
+                        <img src="image/bouton-pro.png" class="btn-pro" alt="Version Professionnelle">
+        
+                        <img src="image/bouton-ac.png" class="btn-academic" alt="Version Académique">
+                </button></li>            
             </ul>
         </div>
     </nav>
@@ -45,10 +50,12 @@
                     <span class="landing-tag">Événementiel</span>
                     <span class="landing-tag">Live Twitch</span>
                 </div>
-                <div class="landing-tags-right">
-                    <span class="competence-badge concevoir">Concevoir</span>
-                    <span class="competence-badge exprimer">Exprimer</span>
-                    <span class="competence-badge entreprendre">Entreprendre</span>
+                <div class="academic-only">
+                    <div class="landing-tags-right">
+                        <span class="competence-badge concevoir">Concevoir</span>
+                        <span class="competence-badge exprimer">Exprimer</span>
+                        <span class="competence-badge entreprendre">Entreprendre</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,7 +127,9 @@
                             <img class="lightning" src="image/eclair.svg" alt="éclair">Lors de la mise en place des panneaux, j’ai été confrontée à une contrainte technique avec  l'impression des panneaux de signalétique dans un sens unique, ce qui a nécessité une adaptation immédiate pour assurer le guidage des visiteurs.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge exprimer">Exprimer</span>
+                            <div class="academic-only">
+                                <span class="competence-badge exprimer">Exprimer</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Illustrator, Figma</span>
                         </div>
                     </div>
@@ -152,8 +161,10 @@
                             Ensuite, nous avons élaboré un plan détaillé de la salle FA300, dans laquelle se déroulait l'événement, pour parer toute éventualité. Le groupe était composé d’une personne de chaque pôle, et je représentais l’organisation événementielle. Cette configuration nous a permis de créer deux espaces distincts : l’un dédié aux joueurs et casters, et l’autre exclusivement réservé à la régie.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge concevoir">Concevoir</span>
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge concevoir">Concevoir</span>
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Figma</span>
                         </div>
                     </div>
@@ -178,8 +189,10 @@
                             <p class="basic-text">Mon rôle incluait également la communication interne entre les différentes parties de la régie, notamment avec Elouan Chaudun et Gabriel Vareille, afin d’assurer une parfaite synchronisation des overlays avec l’image diffusée à l’écran. Par ailleurs, j’ai géré une partie de la communication externe, uniquement pour intégrer les happenings au planning, tandis que Lana s’occupait de la communication externe globale.</p>
                         </p> 
                         <div class="production-skills">
-                            <span class="competence-badge concevoir">Concevoir</span>
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge concevoir">Concevoir</span>
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,8 +207,10 @@
                             Une fois l'événement passé, nous devions préparer notre soutenance commune et un dossier de projet. Dans ce document, nous devions mettre en avant les différentes étapes de notre processus de production, en justifiant nos choix et en analysant les résultats obtenus. J’ai pris en charge la rédaction de la partie dédiée à l’organisation de l’événement, ainsi que celle sur la signalétique. J'ai également contribué à la relecture globale du dossier. 
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge exprimer">Exprimer</span>
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge exprimer">Exprimer</span>
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                         </div>
                     </div>
                     <div class="image-legend">
@@ -211,7 +226,7 @@
 
 
     <!-- Critical Learning Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Apprentissages critiques</h2>
@@ -229,7 +244,7 @@
 
 
     <!-- Personal Analysis Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Analyse personnelle</h2>
@@ -246,7 +261,7 @@
 
 
     <!-- Related Improvements Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Améliorations en lien</h2>
@@ -256,10 +271,11 @@
                 <!-- Projects will be inserted here by JavaScript -->
             </div>
         </div>
+    </section>
+
         <div class="button-next-project">
             <a href="index.html" class="next-btn">RETOUR AUX PROJETS</a>
         </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">

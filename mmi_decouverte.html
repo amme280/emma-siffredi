@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Siffredi - Portfolio Académique</title>
+    <title>Emma Siffredi - MMI Découvertes</title>
     <link rel="icon" type="image/png" href="image/FAVICON.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,14 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html#projects" class="nav-link">Mes projets</a></li>
-                <li><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
+                <li class="academic-only"><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
                 <li><a href="apropos.html" class="nav-link">À propos</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="version-toggle" aria-label="Changer de version">
+                        <img src="image/bouton-pro.png" class="btn-pro" alt="Version Professionnelle">
+        
+                        <img src="image/bouton-ac.png" class="btn-academic" alt="Version Académique">
+                </button></li>            
             </ul>
         </div>
     </nav>
@@ -46,9 +51,11 @@
                     <span class="landing-tag">HTML</span>
                     <span class="landing-tag">CSS</span>
                 </div>
-                <div class="landing-tags-right">
-                    <span class="competence-badge developper">Développer</span>
-                    <span class="competence-badge exprimer">Exprimer</span>
+                <div class="academic-only">
+                    <div class="landing-tags-right">
+                        <span class="competence-badge developper">Développer</span>
+                        <span class="competence-badge exprimer">Exprimer</span>
+                    </div>
                 </div>
             </div> 
         </div>
@@ -104,7 +111,9 @@
                             Avant de commencer à coder nos pages individuelles, nous avons réalisé plusieurs maquettes. Le but était de prévisualiser nos idées graphiques, afin de savoir ce que nous devons coder.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge exprimer">Exprimer</span>
+                            <div class="academic-only">
+                                <span class="competence-badge exprimer">Exprimer</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Figma</span>
                         </div>
                     </div>
@@ -125,7 +134,9 @@
                             Puis, pour la page “Destinations”, cette dernière devait comporter quatre choix possibles (Europe, Asie, Afrique, Amérique) avec trois pays par choix. Sur ces mêmes pages, se trouve un système de filtres en fonction des caractéristiques de voyages. 
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge developper">Développer</span>
+                            <div class="academic-only">
+                                <span class="competence-badge developper">Développer</span>
+                            </div>
                             <span class="logiciels">Langages utilisés : HTML, CSS, PHP</span>
                         </div>
                     </div>
@@ -145,7 +156,9 @@
                             De plus, j’ai mis en place la possibilité d’ajouter au panier chaque pays, et de modifier le nombre de séjours souhaité.  Je me suis davantage occupée de la mise en page (HTML et CSS) que de la liaison avec le panier (PHP).
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge developper">Développer</span>
+                            <div class="academic-only">
+                                <span class="competence-badge developper">Développer</span>
+                            </div>
                             <span class="logiciels">Langages utilisés : HTML, CSS, PHP</span>
                         </div>
                     </div>
@@ -158,7 +171,7 @@
 
 
     <!-- Critical Learning Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Apprentissages critiques</h2>
@@ -174,7 +187,7 @@
 
 
     <!-- Personal Analysis Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Analyse personnelle</h2>
@@ -190,7 +203,7 @@
     </section>
 
     <!-- Related Improvements Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Améliorations en lien</h2>
@@ -200,10 +213,11 @@
                 <!-- Projects will be inserted here by JavaScript -->
             </div>
         </div>
-        <div class="button-next-project">
-            <a href="index.html" class="next-btn">RETOUR AUX PROJETS</a>
-        </div>
     </section>
+
+    <div class="button-next-project">
+        <a href="index.html" class="next-btn">RETOUR AUX PROJETS</a>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">

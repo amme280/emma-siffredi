@@ -110,6 +110,40 @@
 }
 
 /* ===== LANDING SECTION ===== */
+
+/* Caché par défaut sur toutes les pages */
+.academic-only {
+    display: none;
+}
+
+/* Affiché partout si le mode académique est actif */
+body.mode-academique .academic-only {
+    display: block;
+}
+
+/* On stylise le conteneur du bouton pour qu'il soit transparent */
+#version-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-pro, .btn-academic {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+/* --- ETAT PAR DÉFAUT (MODE PRO) --- */
+#version-toggle .btn-academic { display: none; } /* On cache le bouton académique */
+#version-toggle .btn-pro { display: block; }
+
+/* --- ETAT ACADÉMIQUE (Quand le JS s'active) --- */
+body.mode-academique #version-toggle .btn-pro { display: none; } /* On cache le bouton pro */
+body.mode-academique #version-toggle .btn-academic { display: block; } /* On montre l'académique */
+
 .project-landing {
     margin-top: 60px;
     background: var(--white);

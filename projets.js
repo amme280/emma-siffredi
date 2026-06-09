@@ -113,6 +113,9 @@ class Lightbox {
     }
 
     init() {
+        // Ne s'initialiser que si la lightbox existe sur la page
+        if (!this.modal) return;
+        
         this.setupImageListeners();
         this.setupZoomListeners();
         this.setupDragListeners();
@@ -377,3 +380,84 @@ if (document.readyState === 'loading') {
     // DOM is already loaded
     initializeKusama();
 }
+
+const toggleBtn = document.getElementById('version-toggle');
+const btnProImg = document.querySelector('.btn-pro');
+const btnAcImg = document.querySelector('.btn-academic');
+
+// Gestion du hover sur les images
+if (btnProImg && btnAcImg) {
+    toggleBtn.addEventListener('mouseenter', () => {
+        if (document.body.classList.contains('mode-academique')) {
+            btnAcImg.src = 'image/hover-pro.png';
+        } else {
+            btnProImg.src = 'image/hover-ac.png';
+        }
+    });
+    
+    toggleBtn.addEventListener('mouseleave', () => {
+        btnProImg.src = 'image/bouton-pro.png';
+        btnAcImg.src = 'image/bouton-ac.png';
+    });
+}
+
+// 1. Au chargement de la page : on vérifie le mode sauvegardé dans sessionStorage
+const currentMode = sessionStorage.getItem('portfolio-mode');
+
+if (currentMode === 'professional') {
+    // Mode professionnel sauvegardé dans la session
+} else {
+    // Mode académique par défaut (si rien n'est sauvegardé)
+    document.body.classList.add('mode-academique');
+}
+
+// 2. Écouteur de clic sur le bouton de la navbar
+if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+        // On bascule la classe sur le body
+        document.body.classList.toggle('mode-academique');
+        
+        // On sauvegarde le choix de l'utilisateur dans sessionStorage (se vide à la fermeture du navigateur)
+        if (document.body.classList.contains('mode-academique')) {
+            sessionStorage.setItem('portfolio-mode', 'academic');
+        } else {
+            sessionStorage.setItem('portfolio-mode', 'professional');
+        }
+        
+        // Changer le texte hero
+        updateHeroText();
+        
+        // Rafraîchir les filtres et les projets
+        refreshFiltersAndProjects();
+    });
+}
+
+// Fonction pour changer le texte du hero
+function updateHeroText() {
+    const heroText = document.getElementById('heroText');
+    if (heroText) {
+        if (document.body.classList.contains('mode-academique')) {
+            heroText.textContent = 'BUT MMI 2023-2026';
+        } else {
+            heroText.textContent = 'PORTFOLIO 2023-2026';
+        }
+    }
+}
+
+// Fonction pour rafraîchir les filtres et projets
+function refreshFiltersAndProjects() {
+    // Régénérer les filtres selon le nouveau mode
+    if (typeof generateFilters === 'function') {
+        generateFilters();
+    }
+    
+    // Rafraîchir les projets
+    if (typeof renderProjects === 'function') {
+        renderProjects(projectsData);
+    }
+}
+
+// Initialiser le texte hero au chargement
+document.addEventListener('DOMContentLoaded', () => {
+    updateHeroText();
+});

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Siffredi - Portfolio Académique</title>
+    <title>Emma Siffredi - Stage Musée d'Histoire de Marseille</title>
     <link rel="icon" type="image/png" href="image/FAVICON.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,14 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html#projects" class="nav-link">Mes projets</a></li>
-                <li><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
+                <li class="academic-only"><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
                 <li><a href="apropos.html" class="nav-link">À propos</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="version-toggle" aria-label="Changer de version">
+                        <img src="image/bouton-pro.png" class="btn-pro" alt="Version Professionnelle">
+        
+                        <img src="image/bouton-ac.png" class="btn-academic" alt="Version Académique">
+                </button></li>            
             </ul>
         </div>
     </nav>
@@ -45,9 +50,11 @@
                     <span class="landing-tag">Magazine</span>
                     <span class="landing-tag">Print</span>
                 </div>
-                <div class="landing-tags-right">
-                    <span class="competence-badge comprendre">Comprendre</span>
-                    <span class="competence-badge entreprendre">Entreprendre</span>
+                <div class="academic-only">
+                    <div class="landing-tags-right">
+                        <span class="competence-badge comprendre">Comprendre</span>
+                        <span class="competence-badge entreprendre">Entreprendre</span>
+                    </div>
                 </div>
             </div> 
         </div>
@@ -114,7 +121,9 @@
                             J’ai commencé par effectuer une veille numérique des concurrents présents sur le marché, et plus précisément leurs magazines. Après avoir rassemblé l’ensemble des informations nécessaires, j’ai élaboré un sommaire structurant les contenus que le musée souhaitait mettre en avant. Ce sommaire a été conçu en fonction des priorités définies avec l’équipe, afin d’organiser l’information de manière claire et pertinente.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge comprendre">Comprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge comprendre">Comprendre</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -128,7 +137,9 @@
                             Le musée, souhaitant s’éloigner de sa charte graphique institutionnelle, m’a proposé d’en élaborer une nouvelle. L’objectif était de refléter ses valeurs et son ancrage dans l’histoire de Marseille, tout en évoquant l’ambiance de la ville, entre mer et terre. Cette nouvelle identité visuelle devait également apporter une touche plus moderne, vivante et accessible. Mes seules obligations étaient de garder le logo et les lignes temporelles de la charte existante.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge comprendre">Comprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge comprendre">Comprendre</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Illustrator</span>
                         </div>
                     </div>
@@ -148,7 +159,9 @@
                             Tout au long du processus, j’ai veillé à maintenir une cohérence graphique en accord avec la charte établie. Chaque étape importante du maquettage a été soumise à une validation par le directeur du musée, garantissant ainsi la pertinence des choix éditoriaux et visuels. 
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                             <span class="logiciels">Logiciels utilisés : Indesign, Illustrator, Photoshop </span>
                         </div>
                     </div>
@@ -175,7 +188,9 @@
                             J’ai pris contact avec l’imprimerie de la Ville de Marseille, qui m’a communiqué les contraintes techniques et les réglages nécessaires pour l’impression du magazine.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                            <div class="academic-only">
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -189,7 +204,7 @@
 
 
     <!-- Critical Learning Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Apprentissages critiques</h2>
@@ -206,7 +221,7 @@
 
 
     <!-- Personal Analysis Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Analyse personnelle</h2>
@@ -219,7 +234,7 @@
     </section>
 
     <!-- Related Improvements Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Améliorations en lien</h2>
@@ -229,10 +244,11 @@
                 <!-- Projects will be inserted here by JavaScript -->
             </div>
         </div>
-        <div class="button-next-project">
+    </section>
+
+    <div class="button-next-project">
             <a href="index.html" class="next-btn">RETOUR AUX PROJETS</a>
         </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">

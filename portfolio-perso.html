@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emma Siffredi - Portfolio Académique</title>
+    <title>Emma Siffredi - Portfolio Personnel</title>
     <link rel="icon" type="image/png" href="image/FAVICON.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,14 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html#projects" class="nav-link">Mes projets</a></li>
-                <li><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
+                <li class="academic-only"><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
                 <li><a href="apropos.html" class="nav-link">À propos</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="version-toggle" aria-label="Changer de version">
+                        <img src="image/bouton-pro.png" class="btn-pro" alt="Version Professionnelle">
+        
+                        <img src="image/bouton-ac.png" class="btn-academic" alt="Version Académique">
+                </button></li>            
             </ul>
         </div>
     </nav>
@@ -45,9 +50,11 @@
                     <span class="landing-tag">Professionnalisation</span>
                     <span class="landing-tag">Web</span>
                 </div>
-                <div class="landing-tags-right">
-                    <span class="competence-badge entreprendre">Entreprendre</span>
-                    <span class="competence-badge developper">Développer</span>
+                <div class="academic-only">
+                    <div class="landing-tags-right">
+                        <span class="competence-badge entreprendre">Entreprendre</span>
+                        <span class="competence-badge developper">Développer</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +116,9 @@
                              J’ai commencé par choisir les créations les plus pertinentes, puis j’ai rédigé des textes explicatifs détaillant mon processus créatif. Il a fallu que je sélectionne seulement les projets qui représentaient au mieux mon travail et mes compétences actuelles. 
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge entreprendre">Entreprendre</span>
+                            <div class="academic-only">   
+                                <span class="competence-badge entreprendre">Entreprendre</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,7 +133,9 @@
                 <p class="difficulty">
                 <img class="lightning" src="image/eclair.svg" alt="éclair">Framer offre également un hébergement gratuit, ce qui a renforcé la dimension pratique et accessible du projet. </p>
                 <div class="production-skills">
-                    <span class="competence-badge developper">Développer</span>
+                    <div class="academic-only">   
+                        <span class="competence-badge developper">Développer</span>
+                    </div>
                     <span class="logiciels">Logiciels utilisés : Framer</span>
                 </div>
                 <div class="production-gallery production-gallery-2col">
@@ -156,7 +167,9 @@
                             Le site est entièrement responsive et pensé pour évoluer, chaque page peut être modifiée ou améliorée à tout moment. La réalisation de l’ensemble du site a duré environ un mois.
                         </p>
                         <div class="production-skills">
-                            <span class="competence-badge developper">Développer</span>
+                            <div class="academic-only">   
+                                <span class="competence-badge developper">Développer</span>
+                            </div>
                         </div>
                     </div>
                     <div class="production-text encadre">
@@ -173,7 +186,7 @@
 
 
     <!-- Critical Learning Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Apprentissages critiques</h2>
@@ -189,7 +202,7 @@
 
 
     <!-- Personal Analysis Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Analyse personnelle</h2>
@@ -205,7 +218,7 @@
     </section>
 
     <!-- Related Improvements Section -->
-    <section class="project-learnings">
+    <section class="project-learnings academic-only">
         <div class="project-learnings-container">
             <div class="production-title-wrapper">
                 <h2>Améliorations en lien</h2>
@@ -215,10 +228,11 @@
                 <!-- Projects will be inserted here by JavaScript -->
             </div>
         </div>
-        <div class="button-next-project">
+    </section>
+    
+    <div class="button-next-project">
             <a href="index.html" class="next-btn">RETOUR AUX PROJETS</a>
         </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">

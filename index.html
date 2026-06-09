@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -23,10 +24,15 @@
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#projects" class="nav-link active">Mes projets</a></li>
-                <li><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
+                <li><a href="index.html#projects" class="nav-link">Mes projets</a></li>
+                <li class="academic-only"><a href="amelioration.html" class="nav-link">Mon amélioration</a></li>
                 <li><a href="apropos.html" class="nav-link">À propos</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><button id="version-toggle" aria-label="Changer de version">
+                        <img src="image/bouton-pro.png" class="btn-pro" alt="Version Professionnelle">
+        
+                        <img src="image/bouton-ac.png" class="btn-academic" alt="Version Académique">
+                </button></li>            
             </ul>
         </div>
     </nav>
@@ -37,7 +43,7 @@
             <div class="hero-content">                
                 <div class="hero-buttons">
                     <img src="image/mon_portfolio.gif" alt="Portfolio" class="hero-gif">
-                    <div class="fake-button">BUT MMI 2023-2026</div>
+                    <div class="fake-button" id="heroText">BUT MMI 2023-2026</div>
                 </div>
                 <a href="#projects" class="hero-arrow-btn" title="Voir mes projets">
                         <img src="image/fleche.svg" alt="Flèche vers les projets" class="arrow-svg">
@@ -55,13 +61,8 @@
             </div>
             
             <!-- Filters -->
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="Comprendre">Comprendre</button>
-                <button class="filter-btn" data-filter="Concevoir">Concevoir</button>
-                <button class="filter-btn" data-filter="Exprimer">Exprimer</button>
-                <button class="filter-btn" data-filter="Développer">Développer</button>
-                <button class="filter-btn" data-filter="Entreprendre">Entreprendre</button>
+            <div class="filters" id="filtersContainer">
+                <!-- Filters will be generated dynamically by JavaScript -->
             </div>
 
             <!-- Projects Grid -->
@@ -70,8 +71,10 @@
             </div>
 
             <!-- Improvements Button -->
-            <div class="improvements-section">
-                <a href="amelioration.html" class="improvements-btn">VOIR MON AMÉLIORATION</a>
+            <div class="academic-only">
+                <div class="improvements-section">
+                    <a href="amelioration.html" class="improvements-btn">VOIR MON AMÉLIORATION</a>
+                </div>
             </div>
         </div>
     </section>
@@ -88,6 +91,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="projets.js"></script>
 </body>
 </html>
 
